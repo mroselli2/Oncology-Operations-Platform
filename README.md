@@ -3,8 +3,7 @@
 A fully synthetic reference implementation for examining oncology access, scheduling,
 authorization, diagnostic prerequisites, capacity, and care-coordination workflows.
 
-**Live App:** not yet deployed -- see [Running Locally](#running-locally) to run the dashboard on
-your own machine in the meantime.
+**Live App:** [oncology-operations-platform.streamlit.app](https://oncology-operations-platform-2xvvskh7ngcg9a2zvjhsar.streamlit.app/)
 
 All data are synthetic. The platform does not make treatment decisions, book appointments, or send
 patient communications.

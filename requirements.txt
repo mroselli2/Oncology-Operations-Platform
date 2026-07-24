@@ -1,0 +1,16 @@
+# Direct dependencies, pinned to the versions verified during development.
+# Install into a project-local .venv only (never globally):
+#   python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
+
+pandas==3.0.5
+openpyxl==3.1.5
+PyYAML==6.0.3
+python-dotenv==1.2.2
+pydantic==2.13.4
+requests==2.34.2
+tabulate==0.10.0
+streamlit==1.60.0
+
+# Testing. Mocking uses pytest's built-in monkeypatch fixture + the stdlib
+# unittest.mock -- no separate mocking library is required.
+pytest==9.1.1

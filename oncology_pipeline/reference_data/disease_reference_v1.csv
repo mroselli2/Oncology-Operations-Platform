@@ -1,0 +1,9 @@
+disease_ref_id,cancer_type,stage_system,icd10_code,mapping_status,notes,reference_dataset_version
+ONC-DXR-0001,Breast Cancer,AJCC TNM (not encoded in ICD-10-CM),C50.9,mapped,"ICD-10-CM C50.9 = malignant neoplasm of breast, unspecified site; a real public code set, applied at topography level only.",v1.0.0
+ONC-DXR-0002,Colorectal Cancer,AJCC TNM (not encoded in ICD-10-CM),C18.9,mapped,"ICD-10-CM C18.9 = malignant neoplasm of colon, unspecified; colorectal spans C18-C20, C18.9 used as representative topography code.",v1.0.0
+ONC-DXR-0003,Non-Small Cell Lung Cancer,AJCC TNM (not encoded in ICD-10-CM),C34.90,mapped,"ICD-10-CM C34.90 = malignant neoplasm of unspecified part of unspecified bronchus or lung; histology (NSCLC vs SCLC) is not separately coded in ICD-10-CM topography.",v1.0.0
+ONC-DXR-0004,Prostate Cancer,AJCC TNM (not encoded in ICD-10-CM),C61,mapped,ICD-10-CM C61 = malignant neoplasm of prostate.,v1.0.0
+ONC-DXR-0005,Melanoma,AJCC TNM (not encoded in ICD-10-CM),C43.9,mapped,"ICD-10-CM C43.9 = malignant melanoma of skin, unspecified.",v1.0.0
+ONC-DXR-0006,Pancreatic Cancer,AJCC TNM (not encoded in ICD-10-CM),C25.9,mapped,"ICD-10-CM C25.9 = malignant neoplasm of pancreas, unspecified.",v1.0.0
+ONC-DXR-0007,Ovarian Cancer,AJCC TNM (not encoded in ICD-10-CM),C56.9,mapped,ICD-10-CM C56.9 = malignant neoplasm of unspecified ovary.,v1.0.0
+ONC-DXR-0008,Head and Neck Cancer,AJCC TNM (not encoded in ICD-10-CM),,not_mapped,"No single ICD-10-CM code covers the 'head and neck cancer' umbrella (it spans oral cavity/pharynx/larynx categories C00-C14 and C32); left unmapped rather than picking an arbitrary subsite code.",v1.0.0

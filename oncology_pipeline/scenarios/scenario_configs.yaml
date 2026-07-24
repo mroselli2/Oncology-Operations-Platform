@@ -1,0 +1,39 @@
+# Named, inspectable scenario presets controlling delay/backlog distributions.
+# Selected via `--scenario <name>` on the CLI (default: baseline). Adding or
+# tuning a scenario here should never require touching generation code.
+
+baseline:
+  description: "Normal operating conditions across the facility network."
+  offset_multiplier: 1.0          # scales every pathway step's min/max day offset
+  capacity_multiplier: 1.0        # scales facility_capabilities.weekly_capacity
+  holiday_extra_days: [5, 15]     # extra delay range when a step lands in the holiday window
+  imaging_complete_prob: 0.75
+  pathology_received_prob: 0.67
+  no_show_base_rate: 0.04
+  no_show_high_risk_rate: 0.10    # applies to Medicaid/Uninsured patients
+  extra_delay_per_no_show: [2, 6]
+  extra_delay_per_reschedule: [1, 4]
+
+high_backlog:
+  description: "Elevated capacity strain across facilities; longer lead times, lower throughput."
+  offset_multiplier: 1.4
+  capacity_multiplier: 0.6
+  holiday_extra_days: [10, 25]
+  imaging_complete_prob: 0.65
+  pathology_received_prob: 0.55
+  no_show_base_rate: 0.07
+  no_show_high_risk_rate: 0.15
+  extra_delay_per_no_show: [4, 10]
+  extra_delay_per_reschedule: [2, 6]
+
+holiday_surge:
+  description: "Cohort weighted toward the holiday slowdown window; moderate capacity strain."
+  offset_multiplier: 1.1
+  capacity_multiplier: 0.85
+  holiday_extra_days: [10, 20]
+  imaging_complete_prob: 0.72
+  pathology_received_prob: 0.63
+  no_show_base_rate: 0.05
+  no_show_high_risk_rate: 0.11
+  extra_delay_per_no_show: [3, 7]
+  extra_delay_per_reschedule: [1, 5]

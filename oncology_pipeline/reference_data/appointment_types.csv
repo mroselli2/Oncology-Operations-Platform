@@ -1,0 +1,14 @@
+appointment_type_code,description,typical_duration_min,applicable_pathways
+NPV,New Patient Visit,60,ALL
+RPV,Return Patient Visit,30,ALL
+PRE,Pre-Procedure Visit,45,"Surgery-First,Neoadjuvant Therapy"
+POV,Post-Procedure Visit,30,"Surgery-First,Neoadjuvant Therapy"
+EPV,Established Patient Visit,20,ALL
+TUMOR_BOARD,Multidisciplinary Tumor Board Review,15,ALL
+SURG_DISC,Surgical Discussion Visit,30,"Surgery-First,Neoadjuvant Therapy"
+PRE_OP,Pre-Operative Clearance,45,"Surgery-First,Neoadjuvant Therapy"
+RADIATION_PLANNING,Radiation Simulation / Planning,60,Radiation-First
+RADIATION_TX,Radiation Treatment Session,20,Radiation-First
+INFUSION,Systemic / Infusion Therapy Session,180,"Neoadjuvant Therapy,Systemic Therapy Only"
+RESTAGING_IMAGING,Restaging Imaging,45,Neoadjuvant Therapy
+REASSESSMENT,Post-Treatment Reassessment Visit,30,Radiation-First

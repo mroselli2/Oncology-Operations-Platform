@@ -1,0 +1,32 @@
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Runtime-generated data, caches, and reports (rebuilt from scratch each run)
+data/
+outputs/
+
+# Stale pre-consolidation artifacts (left in place, not tracked)
+synthetic_oncology_scheduling_data.xlsx
+oncology_agent_analysis.xlsx
+oncology_agent_report.md
+oncology_insurance_analysis.xlsx
+oncology_insurance_report.md
+oncology_insurance_dataset/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.log
